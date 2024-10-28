@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Satisfacción Docente</title>
+</head>
+<body>
+
+    <h1>Encuesta de Satisfacción Docente</h1>
+
+    <!-- Condición de Cursado -->
+    <p>Condición de cursado al momento de completar la presente encuesta:</p>
+    <input type="radio" id="promocional" name="cursado" value="Promocional">
+    <label for="promocional">Promocional</label><br>
+    <input type="radio" id="regular" name="cursado" value="Regular">
+    <label for="regular">Regular</label><br>
+    <input type="radio" id="libre" name="cursado" value="Libre">
+    <label for="libre">Libre</label><br><br>
+
+    <!-- Porcentaje de asistencia -->
+    <p>¿Qué porcentaje de asistencia a clases tuviste en esta asignatura?</p>
+    <input type="radio" id="mas75" name="asistencia" value="Mas del 75%">
+    <label for="mas75">Más del 75%</label><br>
+    <input type="radio" id="50a75" name="asistencia" value="Entre el 50 y 75%">
+    <label for="50a75">Entre el 50 y 75%</label><br>
+    <input type="radio" id="25a50" name="asistencia" value="Entre el 25 y 50%">
+    <label for="25a50">Entre el 25 y 50%</label><br>
+    <input type="radio" id="menos25" name="asistencia" value="Menos del 25%">
+    <label for="menos25">Menos del 25%</label><br><br>
+
+    <!-- Docente de la comisión -->
+    <p>¿La/el docente corresponde a la comisión en la que cursaste la asignatura?</p>
+    <input type="radio" id="si" name="docente_comision" value="Si">
+    <label for="si">Sí</label><br>
+    <input type="radio" id="no" name="docente_comision" value="No">
+    <label for="no">No</label><br><br>
+
+    <!-- Tipo de clases desarrolladas -->
+    <p>¿Qué tipo de clases desarrolló la/el docente? (puedes marcar más de una opción):</p>
+    <input type="checkbox" id="teoricas" name="tipo_clase" value="Solo teoricas">
+    <label for="teoricas">Solo teóricas</label><br>
+    <input type="checkbox" id="practicas" name="tipo_clase" value="Solo practicas">
+    <label for="practicas">Solo prácticas</label><br>
+    <input type="checkbox" id="teoricopracticas" name="tipo_clase" value="Teorico-practicas">
+    <label for="teoricopracticas">Teórico-prácticas</label><br>
+    <input type="checkbox" id="otras" name="tipo_clase" value="Otras">
+    <label for="otras">Otras (ejemplo, taller, módulos, seminarios, entre otros)</label><br><br>
+
+    <!-- Desarrollo de clases por el docente -->
+    <p>La/el docente tuvo a su cargo el desarrollo de:</p>
+    <input type="radio" id="todas" name="desarrollo_clases" value="Todas las clases">
+    <label for="todas">Todas las clases</label><br>
+    <input type="radio" id="mas2" name="desarrollo_clases" value="Mas de 2 clases">
+    <label for="mas2">Más de 2 clases</label><br>
+    <input type="radio" id="menos2" name="desarrollo_clases" value="Menos de 2 clases">
+    <label for="menos2">Menos de 2 clases</label><br><br>
+
+    <!-- Frecuencia de comportamientos del docente -->
+    <p>Indica con qué frecuencia la/el docente mostró los siguientes comportamientos frente a sus estudiantes:</p>
+
+    <table border="1">
+        <tr>
+            <th>Comportamiento</th>
+            <th>Casi siempre</th>
+            <th>Frecuentemente</th>
+            <th>Con poca frecuencia</th>
+            <th>Casi nunca</th>
+            <th>NS/NC</th>
+        </tr>
+        <tr>
+            <td>Permitió y respetó opiniones</td>
+            <td><input type="radio" name="opinion" value="Casi siempre"></td>
+            <td><input type="radio" name="opinion" value="Frecuentemente"></td>
+            <td><input type="radio" name="opinion" value="Con poca frecuencia"></td>
+            <td><input type="radio" name="opinion" value="Casi nunca"></td>
+            <td><input type="radio" name="opinion" value="NS/NC"></td>
+        </tr>
+        <tr>
+            <td>Manifestó buena disposición al responder dudas</td>
+            <td><input type="radio" name="disposicion" value="Casi siempre"></td>
+            <td><input type="radio" name="disposicion" value="Frecuentemente"></td>
+            <td><input type="radio" name="disposicion" value="Con poca frecuencia"></td>
+            <td><input type="radio" name="disposicion" value="Casi nunca"></td>
+            <td><input type="radio" name="disposicion" value="NS/NC"></td>
+        </tr>
+        <!-- Añadir más filas de comportamiento si es necesario -->
+    </table><br>
+
+    <!-- Observaciones -->
+    <p>En este espacio puedes comunicar observaciones que te parezcan pertinentes, sobre aspectos del desempeño docente que estén considerados, o no considerados, en esta encuesta (no es obligatorio contestar):</p>
+    <textarea name="observaciones"></textarea><br><br>
+
+    <!-- Calificación global -->
+    <p>Utilizando la escala propuesta, ingresa el puntaje con el que calificarías en forma global a la/el docente:</p>
+    <input type="radio" id="sobresaliente" name="puntaje" value="10">
+    <label for="sobresaliente">10 - Sobresaliente</label><br>
+    <input type="radio" id="distinguido" name="puntaje" value="9">
+    <label for="distinguido">9 - Distinguido</label><br>
+    <input type="radio" id="muybueno" name="puntaje" value="8-7">
+    <label for="muybueno">8 - 7 Muy Bueno</label><br>
+    <input type="radio" id="bueno" name="puntaje" value="6-5">
+    <label for="bueno">6 - 5 Bueno</label><br>
+    <input type="radio" id="suficiente" name="puntaje" value="4">
+    <label for="suficiente">4 - Suficiente</label><br>
+    <input type="radio" id="insuficiente" name="puntaje" value="3-1">
+    <label for="insuficiente">3 - 1 Insuficiente</label><br><br>
+
+    <!-- Botón de enviar -->
+    <button type="submit">Enviar Encuesta</button>
+
+</body>
+</html>
