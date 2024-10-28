@@ -115,7 +115,7 @@ a:focus {
   color: black;
 }
 
-.header_section .header_bottom {
+.header_section .header_bottom {     /*menu*/
   background-color: black;
 }
 
@@ -1142,6 +1142,6 @@ a:focus {
 /*# sourceMappingURL=style.css.map */
 
 .Yes{
-  display: none
+  display: 
 
 }
